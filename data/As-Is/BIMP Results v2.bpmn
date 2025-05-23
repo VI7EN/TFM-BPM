@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_187v5ny" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.6.1" xmlns:qbp="http://www.qbp-simulator.com/Schema201212" xmlns:qbpapi="http://www.qbp-simulator.com/ApiSchema201212">
+  <bpmn:collaboration id="Collaboration_0nx0bmg">
+    <bpmn:participant id="Participant_1crgb8x" name="Proceso de Reclutamiento" processRef="Process_1pblfqa"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1pblfqa">
+    <bpmn:laneSet id="LaneSet_02eqrua">
+      <bpmn:lane id="Lane_0jugb87" name="Dto. Operaciones">
+        <bpmn:flowNodeRef>Activity_0iznkq7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_18fe2gk</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0f95g3y</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_02yqm8w</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0dliaro</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_17f0a2q</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1h3b6zn</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1kxtnry</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0llm10p</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0j1fehn</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0ibzd06</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0ohpkwi</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_0ef3juc">
+          <bpmn:lane id="Lane_0stkduf">
+            <bpmn:flowNodeRef>Activity_0iznkq7</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_18fe2gk</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0f95g3y</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_02yqm8w</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0dliaro</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_17f0a2q</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_1h3b6zn</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1kxtnry</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0llm10p</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0j1fehn</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0ibzd06</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0ohpkwi</bpmn:flowNodeRef>
+            <bpmn:childLaneSet id="LaneSet_05rxnm4"/>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_0j2psai" name="Cliente">
+        <bpmn:flowNodeRef>Event_1oqhaf0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1028ae5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0dj38n3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_1g5le8l</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1blm85x</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_0rzb5um</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0bs2ts2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0se1h2w</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1ueawpk</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1beo56p</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_03yozwr</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_0xrwoyo">
+          <bpmn:lane id="Lane_1xiiqu1">
+            <bpmn:flowNodeRef>Event_1oqhaf0</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1028ae5</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0dj38n3</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Gateway_1g5le8l</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1blm85x</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Gateway_0rzb5um</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0bs2ts2</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0se1h2w</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_1ueawpk</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_1beo56p</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_03yozwr</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_05h08ph" name="CATS (Candidate Application Tracking System)">
+        <bpmn:flowNodeRef>Activity_089etqu</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_06eqq4f</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_0gxwp3g">
+          <bpmn:lane id="Lane_00k5l20">
+            <bpmn:flowNodeRef>Activity_089etqu</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_06eqq4f</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_0algpw2" name="Recursos Humanos">
+        <bpmn:flowNodeRef>Event_1x03cdr</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0ai0ti3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0hudixm</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_1sf772q">
+          <bpmn:lane id="Lane_0bzzq62">
+            <bpmn:flowNodeRef>Event_1x03cdr</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0ai0ti3</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0hudixm</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_0ut86fm" name="Candidato">
+        <bpmn:flowNodeRef>Activity_0jzn9og</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1tu6ayp</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_060m6up</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_177m4a1</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_15ujh2s">
+          <bpmn:lane id="Lane_0s82jar">
+            <bpmn:flowNodeRef>Activity_0jzn9og</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1tu6ayp</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_060m6up</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_177m4a1</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_1ev5z71" name="Recruitment &amp; Sourcing &#10;Office (RSO)">
+        <bpmn:flowNodeRef>Event_0wzbcbd</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1gyj904</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_1cfaf76</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0iqmhyn</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1dg1h4g</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_19mo72u</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0ib4mlh</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1rs8r7w</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_154l5ht</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1y5gx5q</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_19ifgkj</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_09nem8p">
+          <bpmn:lane id="Lane_0l12yn0">
+            <bpmn:flowNodeRef>Event_0wzbcbd</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1gyj904</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Gateway_1cfaf76</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0iqmhyn</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1dg1h4g</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_19mo72u</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0ib4mlh</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_1rs8r7w</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_154l5ht</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_1y5gx5q</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_19ifgkj</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Event_1oqhaf0" name="Inicio">
+      <bpmn:outgoing>Flow_0qmy8km</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Activity_1028ae5" name="AA_Enviar solicitud de perfil (Request for Offer - RfO)">
+      <bpmn:incoming>Flow_0qmy8km</bpmn:incoming>
+      <bpmn:outgoing>Flow_0foa5yr</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_0qmy8km" sourceRef="Event_1oqhaf0" targetRef="Activity_1028ae5"/>
+    <bpmn:sequenceFlow id="Flow_04jkuug" name="Si" sourceRef="Gateway_1cfaf76" targetRef="Event_060m6up"/>
+    <bpmn:sequenceFlow id="Flow_1ug5wth" sourceRef="Activity_089etqu" targetRef="Event_0wzbcbd"/>
+    <bpmn:userTask id="Activity_0jzn9og" name="AQ_Confirma interés y entrega documentación de los candidatos">
+      <bpmn:incoming>Flow_1b0gzf6</bpmn:incoming>
+      <bpmn:outgoing>Flow_0myvt77</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_0ogc2uw" sourceRef="Activity_1gyj904" targetRef="Gateway_1cfaf76"/>
+    <bpmn:sequenceFlow id="Flow_0foa5yr" sourceRef="Activity_1028ae5" targetRef="Event_0dliaro"/>
+    <bpmn:sequenceFlow id="Flow_1h2zld2" sourceRef="Activity_0iznkq7" targetRef="Event_06eqq4f"/>
+    <bpmn:sequenceFlow id="Flow_05v7tso" name="No" sourceRef="Gateway_1cfaf76" targetRef="Event_0iqmhyn"/>
+    <bpmn:sequenceFlow id="Flow_0myvt77" sourceRef="Activity_0jzn9og" targetRef="Event_17f0a2q"/>
+    <bpmn:sequenceFlow id="Flow_04aomcx" sourceRef="Activity_1dg1h4g" targetRef="Event_19mo72u"/>
+    <bpmn:sequenceFlow id="Flow_0tbq8qt" sourceRef="Activity_154l5ht" targetRef="Event_1y5gx5q"/>
+    <bpmn:sequenceFlow id="Flow_1kfzt9w" sourceRef="Activity_19ifgkj" targetRef="Gateway_1cfaf76"/>
+    <bpmn:userTask id="Activity_0iznkq7" name="AC_Analizar la solicitud y crear RCM">
+      <bpmn:incoming>Flow_1wfgp5i</bpmn:incoming>
+      <bpmn:outgoing>Flow_1h2zld2</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_089etqu" name="AE_Registrar solicitud en CATS">
+      <bpmn:incoming>Flow_071334t</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ug5wth</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_18fe2gk" name="AY_Enviar propuesta del perfil al cliente">
+      <bpmn:incoming>Flow_07i6ufw</bpmn:incoming>
+      <bpmn:outgoing>Flow_085e2iu</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="Event_1x03cdr" name="Fin">
+      <bpmn:incoming>Flow_0x5684w</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1kug7fk" sourceRef="Activity_0j1fehn" targetRef="Event_0ibzd06"/>
+    <bpmn:sequenceFlow id="Flow_085e2iu" sourceRef="Activity_18fe2gk" targetRef="Event_1ueawpk"/>
+    <bpmn:sequenceFlow id="Flow_13j4zec" sourceRef="Activity_0dj38n3" targetRef="Gateway_1g5le8l"/>
+    <bpmn:sequenceFlow id="Flow_1gzcq3c" name="Si" sourceRef="Gateway_1g5le8l" targetRef="Event_0ohpkwi"/>
+    <bpmn:sequenceFlow id="Flow_10ywfh2" sourceRef="Gateway_1g5le8l" targetRef="Activity_0se1h2w"/>
+    <bpmn:sequenceFlow id="Flow_1grd7i1" sourceRef="Activity_1tu6ayp" targetRef="Event_1beo56p"/>
+    <bpmn:sequenceFlow id="Flow_0nt9cpv" sourceRef="Activity_1blm85x" targetRef="Gateway_0rzb5um"/>
+    <bpmn:sequenceFlow id="Flow_0bjzp50" name="Si" sourceRef="Gateway_0rzb5um" targetRef="Event_0hudixm"/>
+    <bpmn:sequenceFlow id="Flow_10slym6" name="No" sourceRef="Gateway_0rzb5um" targetRef="Event_03yozwr"/>
+    <bpmn:sequenceFlow id="Flow_12l9i1a" sourceRef="Activity_0se1h2w" targetRef="Event_0bs2ts2"/>
+    <bpmn:sequenceFlow id="Flow_1z0ufc3" sourceRef="Activity_02yqm8w" targetRef="Event_177m4a1"/>
+    <bpmn:sequenceFlow id="Flow_0x5684w" sourceRef="Activity_0ai0ti3" targetRef="Event_1x03cdr"/>
+    <bpmn:sequenceFlow id="Flow_07pw71n" sourceRef="Activity_1kxtnry" targetRef="Event_0llm10p"/>
+    <bpmn:sequenceFlow id="Flow_1ey64ky" sourceRef="Activity_0f95g3y" targetRef="Event_1h3b6zn"/>
+    <bpmn:userTask id="Activity_0f95g3y" name="AS_Elaboración del Request Compliancy Matrix (RCM) de los candidatos">
+      <bpmn:incoming>Flow_0n51x0g</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ey64ky</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_0dj38n3" name="BA_Revisar perfil del candidato y decidir">
+      <bpmn:incoming>Flow_0he7wo8</bpmn:incoming>
+      <bpmn:outgoing>Flow_13j4zec</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gateway_1g5le8l" name="¿El candidato es interesante?">
+      <bpmn:incoming>Flow_13j4zec</bpmn:incoming>
+      <bpmn:outgoing>Flow_1gzcq3c</bpmn:outgoing>
+      <bpmn:outgoing>Flow_10ywfh2</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Activity_02yqm8w" name="BC_Organizar entrevista Cliente / Candidato">
+      <bpmn:incoming>Flow_0gl5s4t</bpmn:incoming>
+      <bpmn:outgoing>Flow_1z0ufc3</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_1tu6ayp" name="BE_Realizar entrevista técnica">
+      <bpmn:incoming>Flow_0vqenjf</bpmn:incoming>
+      <bpmn:outgoing>Flow_1grd7i1</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_1blm85x" name="BG_Validar Candidato">
+      <bpmn:incoming>Flow_07k97tf</bpmn:incoming>
+      <bpmn:outgoing>Flow_0nt9cpv</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gateway_0rzb5um" name="¿El candidato es contratado?">
+      <bpmn:incoming>Flow_0nt9cpv</bpmn:incoming>
+      <bpmn:outgoing>Flow_0bjzp50</bpmn:outgoing>
+      <bpmn:outgoing>Flow_10slym6</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="Event_0bs2ts2" name="Fin">
+      <bpmn:incoming>Flow_12l9i1a</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="Activity_0se1h2w" name="BK_Descartar candidato">
+      <bpmn:incoming>Flow_10ywfh2</bpmn:incoming>
+      <bpmn:incoming>Flow_1h7un44</bpmn:incoming>
+      <bpmn:outgoing>Flow_12l9i1a</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_0ai0ti3" name="BI_Preparación de onboarding e incorporación">
+      <bpmn:incoming>Flow_1i4rnpz</bpmn:incoming>
+      <bpmn:outgoing>Flow_0x5684w</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_0ue37et" sourceRef="Activity_0ib4mlh" targetRef="Event_1rs8r7w"/>
+    <bpmn:sequenceFlow id="Flow_1wfgp5i" sourceRef="Event_0dliaro" targetRef="Activity_0iznkq7"/>
+    <bpmn:intermediateCatchEvent id="Event_0dliaro" name="AB_Tiempo Espera 1">
+      <bpmn:incoming>Flow_0foa5yr</bpmn:incoming>
+      <bpmn:outgoing>Flow_1wfgp5i</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1k778ws"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_071334t" sourceRef="Event_06eqq4f" targetRef="Activity_089etqu"/>
+    <bpmn:intermediateCatchEvent id="Event_06eqq4f" name="AD_Tiempo Espera 2">
+      <bpmn:incoming>Flow_1h2zld2</bpmn:incoming>
+      <bpmn:outgoing>Flow_071334t</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1cxfx1q"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="Event_0wzbcbd" name="AF_Tiempo Espera 3">
+      <bpmn:incoming>Flow_1ug5wth</bpmn:incoming>
+      <bpmn:outgoing>Flow_0hnin5j</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_0ki4nfm"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0hnin5j" sourceRef="Event_0wzbcbd" targetRef="Activity_1gyj904"/>
+    <bpmn:userTask id="Activity_1gyj904" name="AG_Validar candidatos disponibles">
+      <bpmn:incoming>Flow_0hnin5j</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ogc2uw</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gateway_1cfaf76" name="¿Hay potenciales candidatos?">
+      <bpmn:incoming>Flow_0ogc2uw</bpmn:incoming>
+      <bpmn:incoming>Flow_1kfzt9w</bpmn:incoming>
+      <bpmn:outgoing>Flow_04jkuug</bpmn:outgoing>
+      <bpmn:outgoing>Flow_05v7tso</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:intermediateCatchEvent id="Event_0iqmhyn" name="AH_Tiempo Espera 4">
+      <bpmn:incoming>Flow_05v7tso</bpmn:incoming>
+      <bpmn:outgoing>Flow_13nvru0</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_184gb2s"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_13nvru0" sourceRef="Event_0iqmhyn" targetRef="Activity_1dg1h4g"/>
+    <bpmn:userTask id="Activity_1dg1h4g" name="AI_Busqueda de potenciales candidatos - Estructura de búsqueda">
+      <bpmn:incoming>Flow_13nvru0</bpmn:incoming>
+      <bpmn:outgoing>Flow_04aomcx</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:intermediateCatchEvent id="Event_19mo72u" name="AJ_Tiempo Espera 5.1">
+      <bpmn:incoming>Flow_04aomcx</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ktl1uz</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_05e6rza"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0ktl1uz" sourceRef="Event_19mo72u" targetRef="Activity_0ib4mlh"/>
+    <bpmn:task id="Activity_0ib4mlh" name="AK_Busqueda - Crear Batch y Research">
+      <bpmn:incoming>Flow_0ktl1uz</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ue37et</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateCatchEvent id="Event_1rs8r7w" name="AL_Tiempo Espera 5.2">
+      <bpmn:incoming>Flow_0ue37et</bpmn:incoming>
+      <bpmn:outgoing>Flow_0fienqn</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_0do7i5v"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0fienqn" sourceRef="Event_1rs8r7w" targetRef="Activity_154l5ht"/>
+    <bpmn:task id="Activity_154l5ht" name="AM_Busqueda - Contacto Masivo">
+      <bpmn:incoming>Flow_0fienqn</bpmn:incoming>
+      <bpmn:outgoing>Flow_0tbq8qt</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateCatchEvent id="Event_1y5gx5q" name="AN_Tiempo Espera 6">
+      <bpmn:incoming>Flow_0tbq8qt</bpmn:incoming>
+      <bpmn:outgoing>Flow_110pftm</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_08gkba9"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_110pftm" sourceRef="Event_1y5gx5q" targetRef="Activity_19ifgkj"/>
+    <bpmn:task id="Activity_19ifgkj" name="AO_Contactar telefónicamente a los candidatos interesados">
+      <bpmn:incoming>Flow_110pftm</bpmn:incoming>
+      <bpmn:outgoing>Flow_1kfzt9w</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateCatchEvent id="Event_060m6up" name="AP_Tiempo Espera 7">
+      <bpmn:incoming>Flow_04jkuug</bpmn:incoming>
+      <bpmn:outgoing>Flow_1b0gzf6</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1tskhpe"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1b0gzf6" sourceRef="Event_060m6up" targetRef="Activity_0jzn9og"/>
+    <bpmn:sequenceFlow id="Flow_0n51x0g" sourceRef="Event_17f0a2q" targetRef="Activity_0f95g3y"/>
+    <bpmn:intermediateCatchEvent id="Event_17f0a2q" name="AR_Tiempo Espera 8">
+      <bpmn:incoming>Flow_0myvt77</bpmn:incoming>
+      <bpmn:outgoing>Flow_0n51x0g</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_11mkn8i"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0iz3b75" sourceRef="Event_1h3b6zn" targetRef="Activity_1kxtnry"/>
+    <bpmn:intermediateCatchEvent id="Event_1h3b6zn" name="AT_Tiempo Espera 9">
+      <bpmn:incoming>Flow_1ey64ky</bpmn:incoming>
+      <bpmn:outgoing>Flow_0iz3b75</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1dzp1dq"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task id="Activity_1kxtnry" name="AU_Evaluar y seleccionar al candidato más adecuado">
+      <bpmn:incoming>Flow_0iz3b75</bpmn:incoming>
+      <bpmn:outgoing>Flow_07pw71n</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateCatchEvent id="Event_0llm10p" name="AV_Tiempo Espera 10">
+      <bpmn:incoming>Flow_07pw71n</bpmn:incoming>
+      <bpmn:outgoing>Flow_0iwbuct</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_0ryouan"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0iwbuct" sourceRef="Event_0llm10p" targetRef="Activity_0j1fehn"/>
+    <bpmn:userTask id="Activity_0j1fehn" name="AW_Preparación de la propuesta (CV + docs)">
+      <bpmn:incoming>Flow_0iwbuct</bpmn:incoming>
+      <bpmn:outgoing>Flow_1kug7fk</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:intermediateCatchEvent id="Event_0ibzd06" name="AX_Tiempo Espera 11">
+      <bpmn:incoming>Flow_1kug7fk</bpmn:incoming>
+      <bpmn:outgoing>Flow_07i6ufw</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_0im81ka"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_07i6ufw" sourceRef="Event_0ibzd06" targetRef="Activity_18fe2gk"/>
+    <bpmn:sequenceFlow id="Flow_0he7wo8" sourceRef="Event_1ueawpk" targetRef="Activity_0dj38n3"/>
+    <bpmn:intermediateCatchEvent id="Event_1ueawpk" name="AZ_Tiempo Espera 12">
+      <bpmn:incoming>Flow_085e2iu</bpmn:incoming>
+      <bpmn:outgoing>Flow_0he7wo8</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_01fb47u"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0gl5s4t" sourceRef="Event_0ohpkwi" targetRef="Activity_02yqm8w"/>
+    <bpmn:intermediateCatchEvent id="Event_0ohpkwi" name="BB_Tiempo Espera 13">
+      <bpmn:incoming>Flow_1gzcq3c</bpmn:incoming>
+      <bpmn:outgoing>Flow_0gl5s4t</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_0x4g9mo"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0vqenjf" sourceRef="Event_177m4a1" targetRef="Activity_1tu6ayp"/>
+    <bpmn:intermediateCatchEvent id="Event_177m4a1" name="BD_Tiempo Espera 14">
+      <bpmn:incoming>Flow_1z0ufc3</bpmn:incoming>
+      <bpmn:outgoing>Flow_0vqenjf</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_16h5543"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_07k97tf" sourceRef="Event_1beo56p" targetRef="Activity_1blm85x"/>
+    <bpmn:intermediateCatchEvent id="Event_1beo56p" name="BF_Tiempo Espera 15">
+      <bpmn:incoming>Flow_1grd7i1</bpmn:incoming>
+      <bpmn:outgoing>Flow_07k97tf</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1alpw44"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1i4rnpz" sourceRef="Event_0hudixm" targetRef="Activity_0ai0ti3"/>
+    <bpmn:intermediateCatchEvent id="Event_0hudixm" name="BH_Tiempo Espera 17">
+      <bpmn:incoming>Flow_0bjzp50</bpmn:incoming>
+      <bpmn:outgoing>Flow_1i4rnpz</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_0qs1tdy"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1h7un44" sourceRef="Event_03yozwr" targetRef="Activity_0se1h2w"/>
+    <bpmn:intermediateCatchEvent id="Event_03yozwr" name="BJ_Tiempo Espera 16">
+      <bpmn:incoming>Flow_10slym6</bpmn:incoming>
+      <bpmn:outgoing>Flow_1h7un44</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_16m3qbn"/>
+    </bpmn:intermediateCatchEvent>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0nx0bmg">
+      <bpmndi:BPMNShape id="Participant_1crgb8x_di" bpmnElement="Participant_1crgb8x" isHorizontal="true">
+        <dc:Bounds x="143" y="55" width="3057" height="2145"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1ev5z71_di" bpmnElement="Lane_1ev5z71" isHorizontal="true">
+        <dc:Bounds x="173" y="930" width="3027" height="660"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0l12yn0_di" bpmnElement="Lane_0l12yn0" isHorizontal="true">
+        <dc:Bounds x="203" y="930" width="2997" height="660"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0ut86fm_di" bpmnElement="Lane_0ut86fm" isHorizontal="true">
+        <dc:Bounds x="173" y="1590" width="3027" height="280"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0s82jar_di" bpmnElement="Lane_0s82jar" isHorizontal="true">
+        <dc:Bounds x="203" y="1590" width="2997" height="280"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0algpw2_di" bpmnElement="Lane_0algpw2" isHorizontal="true">
+        <dc:Bounds x="173" y="1870" width="3027" height="330"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0bzzq62_di" bpmnElement="Lane_0bzzq62" isHorizontal="true">
+        <dc:Bounds x="203" y="1870" width="2997" height="330"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_05h08ph_di" bpmnElement="Lane_05h08ph" isHorizontal="true">
+        <dc:Bounds x="173" y="650" width="3027" height="280"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_00k5l20_di" bpmnElement="Lane_00k5l20" isHorizontal="true">
+        <dc:Bounds x="203" y="650" width="2997" height="280"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0j2psai_di" bpmnElement="Lane_0j2psai" isHorizontal="true">
+        <dc:Bounds x="173" y="55" width="3027" height="270"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1xiiqu1_di" bpmnElement="Lane_1xiiqu1" isHorizontal="true">
+        <dc:Bounds x="203" y="55" width="2997" height="270"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0jugb87_di" bpmnElement="Lane_0jugb87" isHorizontal="true">
+        <dc:Bounds x="173" y="325" width="3027" height="325"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0stkduf_di" bpmnElement="Lane_0stkduf" isHorizontal="true">
+        <dc:Bounds x="203" y="325" width="2997" height="325"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1oqhaf0_di" bpmnElement="Event_1oqhaf0">
+        <dc:Bounds x="255" y="167" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="260" y="210" width="26" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1hgb5vk_di" bpmnElement="Activity_1028ae5">
+        <dc:Bounds x="343" y="145" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0jzn9og_di" bpmnElement="Activity_0jzn9og">
+        <dc:Bounds x="1020" y="1650" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0iznkq7_di" bpmnElement="Activity_0iznkq7">
+        <dc:Bounds x="343" y="500" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0kn26wq_di" bpmnElement="Activity_089etqu">
+        <dc:Bounds x="343" y="810" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_18fe2gk_di" bpmnElement="Activity_18fe2gk">
+        <dc:Bounds x="1970" y="365" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1x03cdr_di" bpmnElement="Event_1x03cdr">
+        <dc:Bounds x="2932" y="1952" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2942" y="1995" width="16" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0uaanbw_di" bpmnElement="Activity_0f95g3y">
+        <dc:Bounds x="1170" y="520" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0dj38n3_di" bpmnElement="Activity_0dj38n3">
+        <dc:Bounds x="1970" y="90" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1g5le8l_di" bpmnElement="Gateway_1g5le8l" isMarkerVisible="true">
+        <dc:Bounds x="2125" y="105" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2108" y="165" width="83" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1dsdhf9_di" bpmnElement="Activity_02yqm8w">
+        <dc:Bounds x="2291" y="520" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1vt1n4w_di" bpmnElement="Activity_1tu6ayp">
+        <dc:Bounds x="2291" y="1740" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1blm85x_di" bpmnElement="Activity_1blm85x">
+        <dc:Bounds x="2462" y="120" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0rzb5um_di" bpmnElement="Gateway_0rzb5um" isMarkerVisible="true">
+        <dc:Bounds x="2647" y="135" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2630.5" y="97.5" width="83" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0bs2ts2_di" bpmnElement="Event_0bs2ts2">
+        <dc:Bounds x="3112" y="142" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="3122" y="185" width="16" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0csdjvm_di" bpmnElement="Activity_0se1h2w">
+        <dc:Bounds x="2960" y="120" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_18erds6_di" bpmnElement="Activity_0ai0ti3">
+        <dc:Bounds x="2800" y="1930" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0dliaro_di" bpmnElement="Event_0dliaro">
+        <dc:Bounds x="375" y="387" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="292" y="395" width="57" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_06eqq4f_di" bpmnElement="Event_06eqq4f">
+        <dc:Bounds x="375" y="702" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="291" y="710" width="58" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0wzbcbd_di" bpmnElement="Event_0wzbcbd">
+        <dc:Bounds x="375" y="1102" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="292" y="1110" width="57" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1tgroee_di" bpmnElement="Activity_1gyj904">
+        <dc:Bounds x="343" y="1322" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1cfaf76_di" bpmnElement="Gateway_1cfaf76" isMarkerVisible="true">
+        <dc:Bounds x="525" y="1337" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="507" y="1396.5" width="86" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0iqmhyn_di" bpmnElement="Event_0iqmhyn">
+        <dc:Bounds x="612" y="1344" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="601" y="1387" width="58" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0tz2phq_di" bpmnElement="Activity_1dg1h4g">
+        <dc:Bounds x="690" y="1322" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_19mo72u_di" bpmnElement="Event_19mo72u">
+        <dc:Bounds x="822" y="1344" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="812" y="1387" width="56" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ib4mlh_di" bpmnElement="Activity_0ib4mlh">
+        <dc:Bounds x="900" y="1322" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1rs8r7w_di" bpmnElement="Event_1rs8r7w">
+        <dc:Bounds x="1032" y="1344" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1022" y="1387" width="56" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_154l5ht_di" bpmnElement="Activity_154l5ht">
+        <dc:Bounds x="1110" y="1322" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1y5gx5q_di" bpmnElement="Event_1y5gx5q">
+        <dc:Bounds x="1282" y="1344" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1271" y="1387" width="58" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_19ifgkj_di" bpmnElement="Activity_19ifgkj">
+        <dc:Bounds x="1350" y="1322" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_060m6up_di" bpmnElement="Event_060m6up">
+        <dc:Bounds x="532" y="1672" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="522" y="1715" width="57" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_17f0a2q_di" bpmnElement="Event_17f0a2q">
+        <dc:Bounds x="1602" y="542" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1591" y="504.5" width="58" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1h3b6zn_di" bpmnElement="Event_1h3b6zn">
+        <dc:Bounds x="1202" y="434" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1119" y="442" width="56" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1kxtnry_di" bpmnElement="Activity_1kxtnry">
+        <dc:Bounds x="1260" y="365" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0llm10p_di" bpmnElement="Event_0llm10p">
+        <dc:Bounds x="1392" y="387" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1382" y="430" width="57" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0j1fehn_di" bpmnElement="Activity_0j1fehn">
+        <dc:Bounds x="1460" y="365" width="100" height="80"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0ibzd06_di" bpmnElement="Event_0ibzd06">
+        <dc:Bounds x="1602" y="387" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1592" y="430" width="57" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1ueawpk_di" bpmnElement="Event_1ueawpk">
+        <dc:Bounds x="2002" y="232" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1919" y="240" width="57" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0ohpkwi_di" bpmnElement="Event_0ohpkwi">
+        <dc:Bounds x="2323" y="402" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2239" y="410" width="58" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_177m4a1_di" bpmnElement="Event_177m4a1">
+        <dc:Bounds x="2323" y="1642" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2239" y="1650" width="59" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1beo56p_di" bpmnElement="Event_1beo56p">
+        <dc:Bounds x="2494" y="252" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2411" y="260" width="57" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0hudixm_di" bpmnElement="Event_0hudixm">
+        <dc:Bounds x="2654" y="1952" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2570" y="1960" width="59" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_03yozwr_di" bpmnElement="Event_03yozwr">
+        <dc:Bounds x="2792" y="142" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2782" y="185" width="56" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0qmy8km_di" bpmnElement="Flow_0qmy8km">
+        <di:waypoint x="291" y="185"/>
+        <di:waypoint x="343" y="185"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_04jkuug_di" bpmnElement="Flow_04jkuug">
+        <di:waypoint x="550" y="1387"/>
+        <di:waypoint x="550" y="1672"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="561" y="1536" width="10" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ug5wth_di" bpmnElement="Flow_1ug5wth">
+        <di:waypoint x="393" y="890"/>
+        <di:waypoint x="393" y="1102"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ogc2uw_di" bpmnElement="Flow_0ogc2uw">
+        <di:waypoint x="443" y="1362"/>
+        <di:waypoint x="525" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0foa5yr_di" bpmnElement="Flow_0foa5yr">
+        <di:waypoint x="393" y="225"/>
+        <di:waypoint x="393" y="387"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1h2zld2_di" bpmnElement="Flow_1h2zld2">
+        <di:waypoint x="393" y="580"/>
+        <di:waypoint x="393" y="702"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_05v7tso_di" bpmnElement="Flow_05v7tso">
+        <di:waypoint x="575" y="1362"/>
+        <di:waypoint x="612" y="1362"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="582" y="1333" width="15" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0myvt77_di" bpmnElement="Flow_0myvt77">
+        <di:waypoint x="1120" y="1690"/>
+        <di:waypoint x="1620" y="1690"/>
+        <di:waypoint x="1620" y="578"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_04aomcx_di" bpmnElement="Flow_04aomcx">
+        <di:waypoint x="790" y="1362"/>
+        <di:waypoint x="822" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0tbq8qt_di" bpmnElement="Flow_0tbq8qt">
+        <di:waypoint x="1210" y="1362"/>
+        <di:waypoint x="1282" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kfzt9w_di" bpmnElement="Flow_1kfzt9w">
+        <di:waypoint x="1380" y="1322"/>
+        <di:waypoint x="1380" y="1240"/>
+        <di:waypoint x="550" y="1240"/>
+        <di:waypoint x="550" y="1337"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kug7fk_di" bpmnElement="Flow_1kug7fk">
+        <di:waypoint x="1560" y="405"/>
+        <di:waypoint x="1602" y="405"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_085e2iu_di" bpmnElement="Flow_085e2iu">
+        <di:waypoint x="2020" y="365"/>
+        <di:waypoint x="2020" y="268"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13j4zec_di" bpmnElement="Flow_13j4zec">
+        <di:waypoint x="2070" y="130"/>
+        <di:waypoint x="2125" y="130"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1gzcq3c_di" bpmnElement="Flow_1gzcq3c">
+        <di:waypoint x="2175" y="130"/>
+        <di:waypoint x="2341" y="130"/>
+        <di:waypoint x="2341" y="402"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2185" y="112" width="10" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_10ywfh2_di" bpmnElement="Flow_10ywfh2">
+        <di:waypoint x="2150" y="105"/>
+        <di:waypoint x="2150" y="70"/>
+        <di:waypoint x="3010" y="70"/>
+        <di:waypoint x="3010" y="120"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1grd7i1_di" bpmnElement="Flow_1grd7i1">
+        <di:waypoint x="2391" y="1780"/>
+        <di:waypoint x="2512" y="1780"/>
+        <di:waypoint x="2512" y="288"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0nt9cpv_di" bpmnElement="Flow_0nt9cpv">
+        <di:waypoint x="2562" y="160"/>
+        <di:waypoint x="2647" y="160"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0bjzp50_di" bpmnElement="Flow_0bjzp50">
+        <di:waypoint x="2672" y="185"/>
+        <di:waypoint x="2672" y="1952"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2647" y="213" width="10" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_10slym6_di" bpmnElement="Flow_10slym6">
+        <di:waypoint x="2697" y="160"/>
+        <di:waypoint x="2792" y="160"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2743" y="142" width="15" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_12l9i1a_di" bpmnElement="Flow_12l9i1a">
+        <di:waypoint x="3060" y="160"/>
+        <di:waypoint x="3112" y="160"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1z0ufc3_di" bpmnElement="Flow_1z0ufc3">
+        <di:waypoint x="2341" y="600"/>
+        <di:waypoint x="2341" y="1642"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0x5684w_di" bpmnElement="Flow_0x5684w">
+        <di:waypoint x="2900" y="1970"/>
+        <di:waypoint x="2932" y="1970"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07pw71n_di" bpmnElement="Flow_07pw71n">
+        <di:waypoint x="1360" y="405"/>
+        <di:waypoint x="1392" y="405"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ey64ky_di" bpmnElement="Flow_1ey64ky">
+        <di:waypoint x="1220" y="520"/>
+        <di:waypoint x="1220" y="470"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ue37et_di" bpmnElement="Flow_0ue37et">
+        <di:waypoint x="1000" y="1362"/>
+        <di:waypoint x="1032" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1wfgp5i_di" bpmnElement="Flow_1wfgp5i">
+        <di:waypoint x="393" y="423"/>
+        <di:waypoint x="393" y="500"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_071334t_di" bpmnElement="Flow_071334t">
+        <di:waypoint x="393" y="738"/>
+        <di:waypoint x="393" y="810"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hnin5j_di" bpmnElement="Flow_0hnin5j">
+        <di:waypoint x="393" y="1138"/>
+        <di:waypoint x="393" y="1322"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13nvru0_di" bpmnElement="Flow_13nvru0">
+        <di:waypoint x="648" y="1362"/>
+        <di:waypoint x="690" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ktl1uz_di" bpmnElement="Flow_0ktl1uz">
+        <di:waypoint x="858" y="1362"/>
+        <di:waypoint x="900" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0fienqn_di" bpmnElement="Flow_0fienqn">
+        <di:waypoint x="1068" y="1362"/>
+        <di:waypoint x="1110" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_110pftm_di" bpmnElement="Flow_110pftm">
+        <di:waypoint x="1318" y="1362"/>
+        <di:waypoint x="1350" y="1362"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1b0gzf6_di" bpmnElement="Flow_1b0gzf6">
+        <di:waypoint x="568" y="1690"/>
+        <di:waypoint x="1020" y="1690"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0n51x0g_di" bpmnElement="Flow_0n51x0g">
+        <di:waypoint x="1602" y="560"/>
+        <di:waypoint x="1270" y="560"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0iz3b75_di" bpmnElement="Flow_0iz3b75">
+        <di:waypoint x="1220" y="434"/>
+        <di:waypoint x="1220" y="405"/>
+        <di:waypoint x="1260" y="405"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0iwbuct_di" bpmnElement="Flow_0iwbuct">
+        <di:waypoint x="1428" y="405"/>
+        <di:waypoint x="1460" y="405"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07i6ufw_di" bpmnElement="Flow_07i6ufw">
+        <di:waypoint x="1638" y="405"/>
+        <di:waypoint x="1970" y="405"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0he7wo8_di" bpmnElement="Flow_0he7wo8">
+        <di:waypoint x="2020" y="232"/>
+        <di:waypoint x="2020" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0gl5s4t_di" bpmnElement="Flow_0gl5s4t">
+        <di:waypoint x="2341" y="438"/>
+        <di:waypoint x="2341" y="520"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0vqenjf_di" bpmnElement="Flow_0vqenjf">
+        <di:waypoint x="2341" y="1678"/>
+        <di:waypoint x="2341" y="1740"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07k97tf_di" bpmnElement="Flow_07k97tf">
+        <di:waypoint x="2512" y="252"/>
+        <di:waypoint x="2512" y="200"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1i4rnpz_di" bpmnElement="Flow_1i4rnpz">
+        <di:waypoint x="2690" y="1970"/>
+        <di:waypoint x="2800" y="1970"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1h7un44_di" bpmnElement="Flow_1h7un44">
+        <di:waypoint x="2828" y="160"/>
+        <di:waypoint x="2960" y="160"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+<qbp:processSimulationInfo xmlns:qbp="http://www.qbp-simulator.com/Schema201212" id="qbp_5cbce16d-5de9-e158-0c58-7eb52b2a515b" processInstances="100" startDateTime="2025-05-23T07:00:00.000Z" currency="EUR"><qbp:arrivalRateDistribution type="FIXED" mean="54000" arg1="NaN" arg2="NaN"><qbp:timeUnit>hours</qbp:timeUnit></qbp:arrivalRateDistribution><qbp:timetables><qbp:timetable id="QBP_DEFAULT_TIMETABLE" default="true" name="Default"><qbp:rules><qbp:rule fromTime="09:00:00.000+00:00" toTime="17:00:00.000+00:00" fromWeekDay="MONDAY" toWeekDay="FRIDAY"/></qbp:rules></qbp:timetable><qbp:timetable id="QBP_247_TIMETABLE" default="false" name="24/7"><qbp:rules><qbp:rule fromTime="00:00:00.000+00:00" toTime="23:59:59.999+00:00" fromWeekDay="MONDAY" toWeekDay="SUNDAY"/></qbp:rules></qbp:timetable></qbp:timetables><qbp:resources><qbp:resource id="Lane_0jugb87" name="Dto. Operaciones" totalAmount="1" costPerHour="22.45" timetableId="QBP_DEFAULT_TIMETABLE"/><qbp:resource id="Lane_0j2psai" name="Cliente" totalAmount="1" costPerHour="0" timetableId="QBP_DEFAULT_TIMETABLE"/><qbp:resource id="Lane_05h08ph" name="CATS (Candidate Application Tracking System)" totalAmount="1" costPerHour="0" timetableId="QBP_DEFAULT_TIMETABLE"/><qbp:resource id="Lane_0algpw2" name="Recursos Humanos" totalAmount="1" costPerHour="22.45" timetableId="QBP_DEFAULT_TIMETABLE"/><qbp:resource id="Lane_0ut86fm" name="Candidato" totalAmount="1" costPerHour="0" timetableId="QBP_DEFAULT_TIMETABLE"/><qbp:resource id="Lane_1ev5z71" name="Recruitment &amp; Sourcing &#10;Office (RSO)" totalAmount="4" costPerHour="22.45" timetableId="QBP_DEFAULT_TIMETABLE"/></qbp:resources><qbp:elements><qbp:element id="qbp_60565304-c020-1ad6-2dd2-159f851f1357" elementId="Event_0dliaro"><qbp:durationDistribution type="NORMAL" mean="4050" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_65837f56-1413-1639-a2b0-c898077692d1" elementId="Event_06eqq4f"><qbp:durationDistribution type="NORMAL" mean="7500" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_91f387a2-358c-e9c2-7ac6-526e3ac087ba" elementId="Event_0wzbcbd"><qbp:durationDistribution type="NORMAL" mean="4050" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_512bc479-28e4-e10e-5f39-0131bb78ee37" elementId="Event_0iqmhyn"><qbp:durationDistribution type="NORMAL" mean="3600" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_c418aa40-c636-17f6-0849-9feb3f9fe04f" elementId="Event_19mo72u"><qbp:durationDistribution type="FIXED" mean="0" arg1="NaN" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_ade1c16f-3f29-09c6-6f8b-f1f8ee0c0fc4" elementId="Event_1rs8r7w"><qbp:durationDistribution type="FIXED" mean="0" arg1="NaN" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_9409e3e2-d572-1451-c654-46254a51c157" elementId="Event_1y5gx5q"><qbp:durationDistribution type="NORMAL" mean="57600" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_2fc2dba1-d8c4-a329-bf46-874828acd6f5" elementId="Event_060m6up"><qbp:durationDistribution type="NORMAL" mean="86400" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_005fb6fc-7ad2-a773-c1e9-a489974899f0" elementId="Event_17f0a2q"><qbp:durationDistribution type="NORMAL" mean="14550" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_4f666014-bc87-5aa7-279b-b479882881fe" elementId="Event_1h3b6zn"><qbp:durationDistribution type="NORMAL" mean="3600" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_5a4efc93-335d-2d3c-ed26-c1a62f6b4e37" elementId="Event_0llm10p"><qbp:durationDistribution type="NORMAL" mean="15300" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_69f9aeaf-5d50-a786-5494-a5559bc618c8" elementId="Event_0ibzd06"><qbp:durationDistribution type="NORMAL" mean="10800" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_7b6ae184-d17c-20b8-297d-2c044b01fa32" elementId="Event_1ueawpk"><qbp:durationDistribution type="NORMAL" mean="432000" arg1="86400" arg2="NaN"><qbp:timeUnit>days</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_23a296a0-184c-98d0-3384-24a2c5590185" elementId="Event_0ohpkwi"><qbp:durationDistribution type="NORMAL" mean="4500" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_8bae0d61-4631-5931-7c81-16d1b2715880" elementId="Event_177m4a1"><qbp:durationDistribution type="NORMAL" mean="432000" arg1="86400" arg2="NaN"><qbp:timeUnit>days</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_09dd49b1-9dde-0fb1-c13b-c49fafbf07d0" elementId="Event_1beo56p"><qbp:durationDistribution type="NORMAL" mean="432000" arg1="86400" arg2="NaN"><qbp:timeUnit>days</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_bf0d5e09-e49c-e12f-41d1-1a8a5ffd4826" elementId="Event_0hudixm"><qbp:durationDistribution type="NORMAL" mean="648000" arg1="86400" arg2="NaN"><qbp:timeUnit>days</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_e0b25d2c-c548-cb4e-1ddc-1b45e7f1927a" elementId="Event_03yozwr"><qbp:durationDistribution type="NORMAL" mean="432000" arg1="86400" arg2="NaN"><qbp:timeUnit>days</qbp:timeUnit></qbp:durationDistribution></qbp:element><qbp:element id="qbp_84feddeb-d8b0-72de-ecf1-3b694bd04552" elementId="Activity_1028ae5"><qbp:durationDistribution type="FIXED" mean="0" arg1="NaN" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0j2psai</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_f4a4083c-5b02-c0bb-3954-2073892b0f8b" elementId="Activity_0iznkq7"><qbp:durationDistribution type="NORMAL" mean="1200" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_749c1732-4950-60bf-bbed-dbf3c504190b" elementId="Activity_089etqu"><qbp:durationDistribution type="NORMAL" mean="1200" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_9380aadf-51d5-f2e3-dd8a-1a34a62747e2" elementId="Activity_1gyj904"><qbp:durationDistribution type="NORMAL" mean="1347" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_1ev5z71</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_58f56425-096b-c6f8-224e-cb95909e6172" elementId="Activity_1dg1h4g"><qbp:durationDistribution type="NORMAL" mean="1050" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_1ev5z71</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_e5bd8acd-15fa-3179-d0cb-067d4597c0cf" elementId="Activity_0ib4mlh"><qbp:durationDistribution type="NORMAL" mean="28800" arg1="0" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_1ev5z71</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_8ed1b0f2-19f1-a382-d518-8be0c1aa3c95" elementId="Activity_154l5ht"><qbp:durationDistribution type="NORMAL" mean="28800" arg1="0" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_1ev5z71</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_36411e7b-2ef3-2e67-127d-823644bcefec" elementId="Activity_19ifgkj"><qbp:durationDistribution type="NORMAL" mean="16200" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_1ev5z71</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_92fa31cb-9851-657d-1326-704eb3dc193d" elementId="Activity_0jzn9og"><qbp:durationDistribution type="NORMAL" mean="3600" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_1ev5z71</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_a8b50d58-e667-2661-d4b8-1ca0586fdd90" elementId="Activity_0f95g3y"><qbp:durationDistribution type="NORMAL" mean="900" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_adb83594-52b1-c68a-9b6b-489b91250c5d" elementId="Activity_1kxtnry"><qbp:durationDistribution type="NORMAL" mean="750" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_d8180bd6-c67a-bf42-b950-89ebdbb71205" elementId="Activity_0j1fehn"><qbp:durationDistribution type="NORMAL" mean="7200" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_5c1ad74a-2ec8-919f-52ae-d65d2552105c" elementId="Activity_18fe2gk"><qbp:durationDistribution type="NORMAL" mean="1050" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_f4b549c3-3f21-2a2e-7e67-215f5a8be6cc" elementId="Activity_0dj38n3"><qbp:durationDistribution type="NORMAL" mean="600" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_b51f2e80-13b6-c3df-1052-44a07766adfb" elementId="Activity_02yqm8w"><qbp:durationDistribution type="NORMAL" mean="1050" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_4ad31b64-a202-a93e-2bb2-d1ea25d1eee1" elementId="Activity_1tu6ayp"><qbp:durationDistribution type="NORMAL" mean="2700" arg1="60" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_45a65a75-e332-b022-06d9-2f8fd2f62322" elementId="Activity_1blm85x"><qbp:durationDistribution type="NORMAL" mean="1800" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_a5daa254-3611-e68f-cf21-468571ffe18f" elementId="Activity_0ai0ti3"><qbp:durationDistribution type="NORMAL" mean="7200" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0algpw2</qbp:resourceId></qbp:resourceIds></qbp:element><qbp:element id="qbp_cfe0f5b9-6b09-189c-6896-eddd9a3f1242" elementId="Activity_0se1h2w"><qbp:durationDistribution type="NORMAL" mean="1200" arg1="360" arg2="NaN"><qbp:timeUnit>minutes</qbp:timeUnit></qbp:durationDistribution><qbp:resourceIds><qbp:resourceId>Lane_0jugb87</qbp:resourceId></qbp:resourceIds></qbp:element></qbp:elements><qbp:sequenceFlows><qbp:sequenceFlow elementId="Flow_0bjzp50" executionProbability="0.7"/><qbp:sequenceFlow elementId="Flow_10slym6" executionProbability="0.3"/><qbp:sequenceFlow elementId="Flow_1gzcq3c" executionProbability="0.5"/><qbp:sequenceFlow elementId="Flow_10ywfh2" executionProbability="0.5"/><qbp:sequenceFlow elementId="Flow_04jkuug" executionProbability="0.25"/><qbp:sequenceFlow elementId="Flow_05v7tso" executionProbability="0.75"/></qbp:sequenceFlows><qbp:statsOptions trimStartProcessInstances="0.05" trimEndProcessInstances="0.05"/></qbp:processSimulationInfo><qbpapi:Results xmlns:qbpapi="http://www.qbp-simulator.com/ApiSchema201212"><qbpapi:Results><qbpapi:process><qbpapi:minCycleTime>775086.551</qbpapi:minCycleTime><qbpapi:averageCycleTime>3423519.469155556</qbpapi:averageCycleTime><qbpapi:maxCycleTime>12784782.008</qbpapi:maxCycleTime><qbpapi:totalCycleTime>31794418.879</qbpapi:totalCycleTime><qbpapi:minCost>112.28858281944444</qbpapi:minCost><qbpapi:averageCost>1642.6536337248458</qbpapi:averageCost><qbpapi:maxCost>12290.033325638899</qbpapi:maxCost><qbpapi:totalCost>147838.8270352361</qbpapi:totalCost><qbpapi:minDuration>22757.016999999993</qbpapi:minDuration><qbpapi:averageDuration>370848.42155555554</qbpapi:averageDuration><qbpapi:maxDuration>2535156.1169999987</qbpapi:maxDuration><qbpapi:processInstances>90</qbpapi:processInstances></qbpapi:process><qbpapi:elements><qbpapi:element id="Process_1pblfqa.Activity_1028ae5" name="AA_Enviar solicitud de perfil (Request for Offer - RfO)"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>57600</qbpapi:max><qbpapi:average>7040</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0dliaro" name="AB_Tiempo Espera 1"><qbpapi:duration><qbpapi:min>3110.445</qbpapi:min><qbpapi:max>5092.522</qbpapi:max><qbpapi:average>4071.4228666666677</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0iznkq7" name="AC_Analizar la solicitud y crear RCM"><qbpapi:duration><qbpapi:min>133.174</qbpapi:min><qbpapi:max>10901.516</qbpapi:max><qbpapi:average>1851.863811111112</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0.8304878611111111</qbpapi:min><qbpapi:max>12.756607597222223</qbpapi:max><qbpapi:average>7.133157401851851</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>9579.448999881744</qbpapi:max><qbpapi:average>708.0167444413715</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>230400</qbpapi:max><qbpapi:average>10820.226022222223</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_06eqq4f" name="AD_Tiempo Espera 2"><qbpapi:duration><qbpapi:min>6800.658</qbpapi:min><qbpapi:max>8498.041</qbpapi:max><qbpapi:average>7514.222611111114</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_089etqu" name="AE_Registrar solicitud en CATS"><qbpapi:duration><qbpapi:min>328.174</qbpapi:min><qbpapi:max>13603.183000000005</qbpapi:max><qbpapi:average>1832.2828888888887</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>2.0465295277777775</qbpapi:min><qbpapi:max>13.308335055555554</qbpapi:max><qbpapi:average>7.541698760185185</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>12483.84099984169</qbpapi:max><qbpapi:average>622.9236222327974</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>228824.075</qbpapi:max><qbpapi:average>34997.731433333334</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0wzbcbd" name="AF_Tiempo Espera 3"><qbpapi:duration><qbpapi:min>3347.314</qbpapi:min><qbpapi:max>5393.329</qbpapi:max><qbpapi:average>4128.486166666666</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_1gyj904" name="AG_Validar candidatos disponibles"><qbpapi:duration><qbpapi:min>683.535</qbpapi:min><qbpapi:max>32758.358999999997</qbpapi:max><qbpapi:average>8064.60772222222</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>3.397158944444444</qbpapi:min><qbpapi:max>14.59469511111111</qbpapi:max><qbpapi:average>8.29006057175926</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>32060.81599998474</qbpapi:max><qbpapi:average>6735.24388889317</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>287645.929</qbpapi:max><qbpapi:average>26548.776311111113</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0iqmhyn" name="AH_Tiempo Espera 4"><qbpapi:duration><qbpapi:min>2716.433</qbpapi:min><qbpapi:max>4700.794</qbpapi:max><qbpapi:average>3588.769655052264</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_1dg1h4g" name="AI_Busqueda de potenciales candidatos - Estructura de búsqueda"><qbpapi:duration><qbpapi:min>1.018</qbpapi:min><qbpapi:max>43936.600999999995</qbpapi:max><qbpapi:average>8060.052027874566</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0.006348361111111111</qbpapi:min><qbpapi:max>13.088456013888889</qbpapi:max><qbpapi:average>6.3927654815137425</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>42961.59200000763</qbpapi:max><qbpapi:average>7034.931505235179</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>288000</qbpapi:max><qbpapi:average>30911.70314982579</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_19mo72u" name="AJ_Tiempo Espera 5.1"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0ib4mlh" name="AK_Busqueda - Crear Batch y Research"><qbpapi:duration><qbpapi:min>28800</qbpapi:min><qbpapi:max>64951.36499999999</qbpapi:max><qbpapi:average>34426.29377700349</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>179.6</qbpapi:min><qbpapi:max>179.6</qbpapi:max><qbpapi:average>179.5999999999991</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>36151.36500000954</qbpapi:max><qbpapi:average>5626.2937770022745</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>57600</qbpapi:min><qbpapi:max>288000</qbpapi:max><qbpapi:average>100549.12891986062</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_1rs8r7w" name="AL_Tiempo Espera 5.2"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_154l5ht" name="AM_Busqueda - Contacto Masivo"><qbpapi:duration><qbpapi:min>28800</qbpapi:min><qbpapi:max>66026.01500000001</qbpapi:max><qbpapi:average>34361.61773170731</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>179.6</qbpapi:min><qbpapi:max>179.6</qbpapi:max><qbpapi:average>179.5999999999991</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>37226.014999866486</qbpapi:max><qbpapi:average>5561.617731704114</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>57600</qbpapi:min><qbpapi:max>345600</qbpapi:max><qbpapi:average>113795.12195121951</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_1y5gx5q" name="AN_Tiempo Espera 6"><qbpapi:duration><qbpapi:min>56610.358</qbpapi:min><qbpapi:max>58753.749</qbpapi:max><qbpapi:average>57569.46563763062</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_19ifgkj" name="AO_Contactar telefónicamente a los candidatos interesados"><qbpapi:duration><qbpapi:min>15442.437000000005</qbpapi:min><qbpapi:max>58154.50399999999</qbpapi:max><qbpapi:average>23655.952783972127</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>94.20179644444443</qbpapi:min><qbpapi:max>107.20334601388889</qbpapi:max><qbpapi:average>100.9980717117209</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>41472.94499991989</qbpapi:max><qbpapi:average>7460.270905937892</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>463.642</qbpapi:min><qbpapi:max>290877.214</qbpapi:max><qbpapi:average>74744.7265818815</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>287</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_060m6up" name="AP_Tiempo Espera 7"><qbpapi:duration><qbpapi:min>85315.712</qbpapi:min><qbpapi:max>87138.719</qbpapi:max><qbpapi:average>86371.44955555559</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0jzn9og" name="AQ_Confirma interés y entrega documentación de los candidatos"><qbpapi:duration><qbpapi:min>2566.078</qbpapi:min><qbpapi:max>34367.653000000006</qbpapi:max><qbpapi:average>10344.061566666664</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>16.002347527777776</qbpapi:min><qbpapi:max>28.984047555555552</qbpapi:max><qbpapi:average>22.44309149753086</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>30280.5</qbpapi:max><qbpapi:average>6745.169388886663</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>230400</qbpapi:max><qbpapi:average>51814.900333333324</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_17f0a2q" name="AR_Tiempo Espera 8"><qbpapi:duration><qbpapi:min>13648.347</qbpapi:min><qbpapi:max>15510.47</qbpapi:max><qbpapi:average>14529.379655555564</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0f95g3y" name="AS_Elaboración del Request Compliancy Matrix (RCM) de los candidatos"><qbpapi:duration><qbpapi:min>212.438</qbpapi:min><qbpapi:max>14809.445000000007</qbpapi:max><qbpapi:average>2203.8016888888897</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0.7874399861111111</qbpapi:min><qbpapi:max>10.158313194444444</qbpapi:max><qbpapi:average>5.801649911265431</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>13438.755000112535</qbpapi:max><qbpapi:average>1273.4703000105121</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>228700.248</qbpapi:max><qbpapi:average>56126.97941111111</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_1h3b6zn" name="AT_Tiempo Espera 9"><qbpapi:duration><qbpapi:min>2796.316</qbpapi:min><qbpapi:max>4511.409</qbpapi:max><qbpapi:average>3617.4394000000016</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_1kxtnry" name="AU_Evaluar y seleccionar al candidato más adecuado"><qbpapi:duration><qbpapi:min>190.415</qbpapi:min><qbpapi:max>5698.823</qbpapi:max><qbpapi:average>1326.6617</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>1.1874490972222222</qbpapi:min><qbpapi:max>11.784765805555555</qbpapi:max><qbpapi:average>5.116270466049381</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>4698.3099999427795</qbpapi:max><qbpapi:average>506.2352555560218</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>228867.65</qbpapi:max><qbpapi:average>4432.277311111112</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0llm10p" name="AV_Tiempo Espera 10"><qbpapi:duration><qbpapi:min>14301.808</qbpapi:min><qbpapi:max>15966.301</qbpapi:max><qbpapi:average>15283.821444444444</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0j1fehn" name="AW_Preparación de la propuesta (CV + docs)"><qbpapi:duration><qbpapi:min>6552.308</qbpapi:min><qbpapi:max>17508.649999999994</qbpapi:max><qbpapi:average>8326.341600000002</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>40.423532361111114</qbpapi:min><qbpapi:max>50.141021097222215</qbpapi:max><qbpapi:average>44.84373066867284</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>10911.130000228884</qbpapi:max><qbpapi:average>1135.364744447178</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>230400</qbpapi:max><qbpapi:average>41771.32251111111</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0ibzd06" name="AX_Tiempo Espera 11"><qbpapi:duration><qbpapi:min>9887.877</qbpapi:min><qbpapi:max>11540.206</qbpapi:max><qbpapi:average>10744.974844444447</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_18fe2gk" name="AY_Enviar propuesta del perfil al cliente"><qbpapi:duration><qbpapi:min>58.93</qbpapi:min><qbpapi:max>8776.341</qbpapi:max><qbpapi:average>1610.7673333333332</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0.3674940277777778</qbpapi:min><qbpapi:max>10.782996916666667</qbpapi:max><qbpapi:average>6.605326028395064</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>7188.951999931334</qbpapi:max><qbpapi:average>551.5613777882468</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>221552.699</qbpapi:max><qbpapi:average>33345.694611111125</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_1ueawpk" name="AZ_Tiempo Espera 12"><qbpapi:duration><qbpapi:min>232358.529</qbpapi:min><qbpapi:max>630365.373</qbpapi:max><qbpapi:average>417197.79241111095</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0dj38n3" name="BA_Revisar perfil del candidato y decidir"><qbpapi:duration><qbpapi:min>153.92699999999604</qbpapi:min><qbpapi:max>13796.518000000004</qbpapi:max><qbpapi:average>3324.0985666666656</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0.35207836111111107</qbpapi:min><qbpapi:max>8.915287874999999</qbpapi:max><qbpapi:average>4.159827087808644</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>13131.610999944685</qbpapi:max><qbpapi:average>2657.043888885837</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>230400</qbpapi:max><qbpapi:average>48539.59042222222</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0ohpkwi" name="BB_Tiempo Espera 13"><qbpapi:duration><qbpapi:min>3750.996</qbpapi:min><qbpapi:max>5068.586</qbpapi:max><qbpapi:average>4446.708803921568</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>51</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_02yqm8w" name="BC_Organizar entrevista Cliente / Candidato"><qbpapi:duration><qbpapi:min>706.109</qbpapi:min><qbpapi:max>7217.805</qbpapi:max><qbpapi:average>1875.959274509804</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>3.402952291666666</qbpapi:min><qbpapi:max>11.416411194444443</qbpapi:max><qbpapi:average>7.028972601034858</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>6253.184000015259</qbpapi:max><qbpapi:average>748.8189019549127</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>51</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_177m4a1" name="BD_Tiempo Espera 14"><qbpapi:duration><qbpapi:min>163939.913</qbpapi:min><qbpapi:max>604595.626</qbpapi:max><qbpapi:average>429439.50929411757</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>51</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_1tu6ayp" name="BE_Realizar entrevista técnica"><qbpapi:duration><qbpapi:min>2521.757</qbpapi:min><qbpapi:max>16824.527000000002</qbpapi:max><qbpapi:average>5966.43025490196</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>15.725956847222221</qbpapi:min><qbpapi:max>17.756802555555556</qbpapi:max><qbpapi:average>16.842853762527234</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>14067.891000070573</qbpapi:max><qbpapi:average>3265.57174509329</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>230400</qbpapi:max><qbpapi:average>69604.67233333336</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>51</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_1beo56p" name="BF_Tiempo Espera 15"><qbpapi:duration><qbpapi:min>243299.221</qbpapi:min><qbpapi:max>589336.144</qbpapi:max><qbpapi:average>430208.83266666665</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>51</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_1blm85x" name="BG_Validar Candidato"><qbpapi:duration><qbpapi:min>1247.649000000005</qbpapi:min><qbpapi:max>14067.891000000003</qbpapi:max><qbpapi:average>3997.1147058823517</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>6.88126798611111</qbpapi:min><qbpapi:max>16.047559333333332</qbpapi:max><qbpapi:average>11.446386101851852</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>11845.134000028615</qbpapi:max><qbpapi:average>2161.6140392246234</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>217487.599</qbpapi:max><qbpapi:average>97494.31680392157</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>51</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0hudixm" name="BH_Tiempo Espera 17"><qbpapi:duration><qbpapi:min>458998.649</qbpapi:min><qbpapi:max>872562.109</qbpapi:max><qbpapi:average>649570.5816486486</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>37</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0ai0ti3" name="BI_Preparación de onboarding e incorporación"><qbpapi:duration><qbpapi:min>6495.116000000009</qbpapi:min><qbpapi:max>15267.740000000002</qbpapi:max><qbpapi:average>7582.424486486489</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>40.50426505555556</qbpapi:min><qbpapi:max>50.87942654166667</qbpapi:max><qbpapi:average>44.709526581831824</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>8031.233000123979</qbpapi:max><qbpapi:average>412.9681081242953</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>230400</qbpapi:max><qbpapi:average>51819.07959459459</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>37</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_03yozwr" name="BJ_Tiempo Espera 16"><qbpapi:duration><qbpapi:min>158964.776</qbpapi:min><qbpapi:max>679385.985</qbpapi:max><qbpapi:average>436330.4512142857</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>14</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Activity_0se1h2w" name="BK_Descartar candidato"><qbpapi:duration><qbpapi:min>548.6909999999916</qbpapi:min><qbpapi:max>11845.133999999991</qbpapi:max><qbpapi:average>2788.0323584905655</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0.5388685972222222</qbpapi:min><qbpapi:max>12.685241541666668</qbpapi:max><qbpapi:average>7.5026853980607955</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>10230.598999986643</qbpapi:max><qbpapi:average>1584.9291320734203</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>230400</qbpapi:max><qbpapi:average>30116.259339622644</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>53</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_0bs2ts2" name="Fin"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>53</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_1x03cdr" name="Fin"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>37</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Event_1oqhaf0" name="Inicio"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Gateway_0rzb5um" name="¿El candidato es contratado?"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>51</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Gateway_1g5le8l" name="¿El candidato es interesante?"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>90</qbpapi:count></qbpapi:element><qbpapi:element id="Process_1pblfqa.Gateway_1cfaf76" name="¿Hay potenciales candidatos?"><qbpapi:duration><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:duration><qbpapi:cost><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:cost><qbpapi:waitingTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:waitingTime><qbpapi:idleTime><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:idleTime><qbpapi:costOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:costOverThreshold><qbpapi:durationOverThreshold><qbpapi:min>0</qbpapi:min><qbpapi:max>0</qbpapi:max><qbpapi:average>0</qbpapi:average></qbpapi:durationOverThreshold><qbpapi:count>377</qbpapi:count></qbpapi:element></qbpapi:elements><qbpapi:resources><qbpapi:resource id="Lane_0ut86fm"><qbpapi:utilization>0</qbpapi:utilization></qbpapi:resource><qbpapi:resource id="Lane_0jugb87"><qbpapi:utilization>0.22299652065643694</qbpapi:utilization></qbpapi:resource><qbpapi:resource id="Lane_0j2psai"><qbpapi:utilization>0</qbpapi:utilization></qbpapi:resource><qbpapi:resource id="Lane_1ev5z71"><qbpapi:utilization>0.7998292538269425</qbpapi:utilization></qbpapi:resource><qbpapi:resource id="Lane_0algpw2"><qbpapi:utilization>0.04185861596744635</qbpapi:utilization></qbpapi:resource><qbpapi:resource id="Lane_05h08ph"><qbpapi:utilization>0</qbpapi:utilization></qbpapi:resource></qbpapi:resources></qbpapi:Results><qbpapi:CycleTimesData><qbpapi:min>775086.551</qbpapi:min><qbpapi:max>12784782.008</qbpapi:max><qbpapi:binWidth>1200970</qbpapi:binWidth><qbpapi:values><qbpapi:value>19</qbpapi:value><qbpapi:value>35</qbpapi:value><qbpapi:value>16</qbpapi:value><qbpapi:value>9</qbpapi:value><qbpapi:value>3</qbpapi:value><qbpapi:value>4</qbpapi:value><qbpapi:value>1</qbpapi:value><qbpapi:value>2</qbpapi:value><qbpapi:value>1</qbpapi:value></qbpapi:values></qbpapi:CycleTimesData><qbpapi:CycleTimesInTimetableData><qbpapi:min>22757.016999999993</qbpapi:min><qbpapi:max>2535156.1169999987</qbpapi:max><qbpapi:binWidth>251240</qbpapi:binWidth><qbpapi:values><qbpapi:value>50</qbpapi:value><qbpapi:value>17</qbpapi:value><qbpapi:value>13</qbpapi:value><qbpapi:value>3</qbpapi:value><qbpapi:value>3</qbpapi:value><qbpapi:value>1</qbpapi:value><qbpapi:value>2</qbpapi:value><qbpapi:value>1</qbpapi:value></qbpapi:values></qbpapi:CycleTimesInTimetableData><qbpapi:WaitingTimesData><qbpapi:min>1275.9730003871719</qbpapi:min><qbpapi:max>565360.3529999849</qbpapi:max><qbpapi:binWidth>56409</qbpapi:binWidth><qbpapi:values><qbpapi:value>51</qbpapi:value><qbpapi:value>9</qbpapi:value><qbpapi:value>10</qbpapi:value><qbpapi:value>7</qbpapi:value><qbpapi:value>5</qbpapi:value><qbpapi:value>2</qbpapi:value><qbpapi:value>1</qbpapi:value><qbpapi:value>2</qbpapi:value><qbpapi:value>3</qbpapi:value></qbpapi:values></qbpapi:WaitingTimesData><qbpapi:CostsData><qbpapi:min>112.28858281944444</qbpapi:min><qbpapi:max>12290.033325638899</qbpapi:max><qbpapi:binWidth>1218</qbpapi:binWidth><qbpapi:values><qbpapi:value>55</qbpapi:value><qbpapi:value>16</qbpapi:value><qbpapi:value>10</qbpapi:value><qbpapi:value>4</qbpapi:value><qbpapi:value>2</qbpapi:value><qbpapi:value>1</qbpapi:value><qbpapi:value>1</qbpapi:value><qbpapi:value>1</qbpapi:value></qbpapi:values></qbpapi:CostsData></qbpapi:Results></bpmn:definitions>
